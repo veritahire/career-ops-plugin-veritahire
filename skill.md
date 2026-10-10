@@ -47,7 +47,7 @@ plugins:
     posted_within_days: 7      # 1, 3, 7, 14 or 30
     title_exclude: "senior, director"
     sort: new                  # new, pay, near (default: best match)
-    pages: 1                   # pages per search (25 jobs a page free, 100 with a key)
+    pages: 1                   # pages per search (25 jobs a page, 100 with a key)
     searches:
       - "registered nurse @ Austin, TX"
       - { what: "charge nurse", where: "Round Rock, TX", radius_miles: 30 }
@@ -57,5 +57,4 @@ plugins:
 ## Limits
 
 No key: about 30 searches an hour from one network, 25 jobs a page. With `VERITAHIRE_API_KEY` in `.env`
-(2,000 free credits at https://veritahire.com/verified-jobs-feed/): 100 jobs a page plus full descriptions,
-one credit per job returned.
+(see https://veritahire.com/developers/): 100 jobs a page plus full descriptions.

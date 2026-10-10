@@ -7,7 +7,7 @@
 // Guide: https://github.com/career-ops-hq/career-ops/blob/main/docs/PLUGINS.md
 // - Egress only through ctx.fetchJson to veritahire.com (manifest allowedHosts).
 // - Producers return Job[] = { title, url, company, location, ... }; the engine writes the pipeline.
-// - No key needed. VERITAHIRE_API_KEY (optional, 2,000 free credits at https://veritahire.com/verified-jobs-feed/)
+// - No key needed. VERITAHIRE_API_KEY (optional, see https://veritahire.com/developers/)
 //   raises the limits to 100 jobs a page and adds the full job description.
 
 const BASE = 'https://veritahire.com';
@@ -56,7 +56,7 @@ function postedAt(day) {
   return Number.isFinite(ms) ? ms : undefined;
 }
 
-/** One free (keyless) search row -> Job. */
+/** One keyless search row -> Job. */
 export function jobFromFree(j) {
   /** @type {any} */
   const job = {

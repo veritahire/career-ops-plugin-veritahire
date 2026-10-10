@@ -12,7 +12,7 @@ Lever, SmartRecruiters, UKG and employer-built career sites, searched by keyword
 - **Employer URLs only.** Each result's `url` is the employer's own posting, so it deduplicates cleanly
   against career-ops' own scanners and you apply where the employer reads applications.
 - **Pay when posted**, as an annual range, so `salary_filter` works.
-- **No key needed.** An optional free key adds full descriptions and 100 jobs a page.
+- **No key needed.** An optional `VERITAHIRE_API_KEY` adds full descriptions and 100 jobs a page.
 
 ## Install
 
@@ -55,9 +55,8 @@ plugins:
       - { what: "clinical informatics", where: "remote" }
 ```
 
-Optional secret in `.env`: `VERITAHIRE_API_KEY` (2,000 free credits at
-https://veritahire.com/verified-jobs-feed/). Without it the plugin uses the free search: about 30 searches
-an hour, 25 jobs a page.
+Optional secret in `.env`: `VERITAHIRE_API_KEY` (see https://veritahire.com/developers/). Without it the
+plugin uses the open search: about 30 searches an hour, 25 jobs a page.
 
 Full reference for agents: [skill.md](skill.md).
 
