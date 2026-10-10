@@ -21,7 +21,7 @@ Lever, SmartRecruiters, UKG and employer-built career sites, searched by keyword
 node plugins.mjs add veritahire
 
 # Before listing (install directly from this repo at a pinned commit):
-node plugins.mjs add robgundling1211/career-ops-plugin-veritahire --sha <40-hex-commit>
+node plugins.mjs add veritahire/career-ops-plugin-veritahire --sha <40-hex-commit>
 ```
 
 Then enable + consent:
@@ -76,7 +76,7 @@ node test/smoke.mjs
 
 Built by [VeritaHire](https://veritahire.com), which reads US job postings straight from employers' own
 career sites and publishes its freshness live at https://veritahire.com/jobdata.php. Also available as a
-Claude Code plugin: [jobhunt](https://github.com/robgundling1211/jobhunt).
+Claude Code plugin: [jobhunt](https://github.com/veritahire/jobhunt).
 
 ## License
 
