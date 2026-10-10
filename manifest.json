@@ -1,0 +1,15 @@
+{
+  "id": "veritahire",
+  "name": "career-ops-plugin-veritahire",
+  "version": "0.1.0",
+  "apiVersion": 1,
+  "description": "Live US jobs read straight from 19,000+ employers' own career sites (Workday, iCIMS, Greenhouse, Lever and more): search by keyword and commute radius, re-checked every 36 hours, no ghost jobs, no key needed.",
+  "hooks": ["search", "ingest"],
+  "requiredEnv": [],
+  "optionalEnv": ["VERITAHIRE_API_KEY"],
+  "allowedHosts": ["veritahire.com"],
+  "entry": "index.mjs",
+  "skill": "skill.md",
+  "humanInTheLoop": true,
+  "homepage": "https://github.com/robgundling1211/career-ops-plugin-veritahire"
+}
