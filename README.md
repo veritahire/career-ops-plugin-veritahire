@@ -12,16 +12,13 @@ Lever, SmartRecruiters, UKG and employer-built career sites, searched by keyword
 - **Employer URLs only.** Each result's `url` is the employer's own posting, so it deduplicates cleanly
   against career-ops' own scanners and you apply where the employer reads applications.
 - **Pay when posted**, as an annual range, so `salary_filter` works.
-- **No key needed.** An optional `VERITAHIRE_API_KEY` adds full descriptions and 100 jobs a page.
+- **No key needed.** An optional `VERITAHIRE_API_KEY` (2,000 free credits to start) adds full descriptions and 100 jobs a page.
 
 ## Install
 
 ```bash
-# Once it's in the career-ops registry:
-node plugins.mjs add veritahire
-
-# Before listing (install directly from this repo at a pinned commit):
-node plugins.mjs add veritahire/career-ops-plugin-veritahire --sha <40-hex-commit>
+# Install straight from this repo, pinned to release v0.1.0:
+node plugins.mjs add veritahire/career-ops-plugin-veritahire --sha 1c12246b8971f05a0a9766af5b380ddea5ef3b95
 ```
 
 Then enable + consent:
@@ -55,8 +52,8 @@ plugins:
       - { what: "clinical informatics", where: "remote" }
 ```
 
-Optional secret in `.env`: `VERITAHIRE_API_KEY` (see https://veritahire.com/developers/). Without it the
-plugin uses the open search: about 30 searches an hour, 25 jobs a page.
+Optional secret in `.env`: `VERITAHIRE_API_KEY` (2,000 free credits at https://veritahire.com/verified-jobs-feed/).
+Without it the plugin uses the free search: about 30 searches an hour, 25 jobs a page.
 
 Full reference for agents: [skill.md](skill.md).
 
