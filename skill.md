@@ -9,7 +9,7 @@ license: MIT
 > This file teaches an AI agent how to drive THIS plugin. It does not change scoring, core files, or
 > anything outside the plugin's search and ingest hooks.
 
-VeritaHire reads 2.5 million+ live US jobs straight from the career sites of 19,000+ employers (Workday,
+VeritaHire reads around 2.5 million live US jobs straight from the career sites of 19,000+ employers (Workday,
 iCIMS, Greenhouse, Lever, SmartRecruiters, UKG and more). Each job is re-checked on the employer's site and
 retired within about 36 hours of the employer taking it down, so every result is open and every URL is the
 employer's own posting. Use it to find jobs at employers that are not in `portals.yml`, near a place.

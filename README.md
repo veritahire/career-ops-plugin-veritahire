@@ -1,6 +1,6 @@
 # career-ops-plugin-veritahire
 
-A community plugin for [career-ops](https://github.com/career-ops-hq/career-ops) that adds **2.5 million+
+A community plugin for [career-ops](https://github.com/career-ops-hq/career-ops) that adds **around 2.5 million
 live US jobs, read straight from the career sites of 19,000+ employers**, to your pipeline.
 
 career-ops scans the companies you list in `portals.yml`. This plugin finds the ones you didn't know to
